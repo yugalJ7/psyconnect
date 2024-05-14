@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@layer components {
+  .custom-badge {
+    width: 1rem;
+    height: 1rem;
+    background-color: #bf99eb;
+    border-radius: 9999px;
+    color: #ffffff;
+    position: absolute;
+    right: -6px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+}
+
+@layer components {
+  .sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+}
